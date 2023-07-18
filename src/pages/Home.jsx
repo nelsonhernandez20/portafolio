@@ -1,6 +1,5 @@
 import MainSection from "../components/MainSection";
 import AboutMe from "../components/AboutMe";
-import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 
 //context
@@ -48,12 +47,12 @@ const projectsMovil = [
     description:
       "University system made with react native and nodejs, this app has all the functionalities of a crud, in addition to chats with socket io, useContext for Darkmode, it has upload of images, upload of student notes, update of student notes, authentication token, sending email with pdf to students, push notifications with firebase, among other functionalities styles made with tailwind",
     carrousel: [
-      { url: "../../public/assets/iq/menu.jpeg" },
-      { url: "../../public/assets/iq/codPhone.jpeg" },
-      { url: "../../public/assets/iq/oportunidad.jpeg" },
-      { url: "../../public/assets/iq/programas.jpeg" },
-      { url: "../../public/assets/iq/tickets.jpeg" },
-      { url: "../../public/assets/iq/asignaciones.jpeg" },
+      { url: `./assets/iq/menu.jpeg` },
+      { url: "./assets/iq/codPhone.jpeg" },
+      { url: "./assets/iq/oportunidad.jpeg" },
+      { url: "./assets/iq/programas.jpeg" },
+      { url: "./assets/iq/tickets.jpeg" },
+      { url: "./assets/iq/asignaciones.jpeg" },
     ],
   },
   {
@@ -63,9 +62,9 @@ const projectsMovil = [
     description:
       "inventory system made with react native and nodejs, system with user registration, inventory registration search by barcode, report generator with pdf, drop-down menu, useContext for Darkmode and styles made with tailwind",
     carrousel: [
-      { url: "../../public/assets/dtis/menu.jpeg" },
-      { url: "../../public/assets/dtis/products.jpeg" },
-      { url: "../../public/assets/dtis/registroUsuario.jpeg" },
+      { url: "./assets/dtis/menu.jpeg" },
+      { url: "./assets/dtis/products.jpeg" },
+      { url: "./assets/dtis/registroUsuario.jpeg" },
     ],
   },
 ];
@@ -73,7 +72,7 @@ const projectsMovil = [
 function Home() {
   //extract context
   const { isDarkTheme } = useContext(ContextTheme);
-
+  // console.log(import.meta.glob('/public/assets/iq/menu.jpeg'));
   return (
     <div className="min-h-screen">
       <MainSection

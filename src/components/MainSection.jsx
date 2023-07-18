@@ -1,12 +1,5 @@
 /* eslint-disable react/prop-types */
-import React from "react";
 
-const links = [
-  { name: "Open roles", href: "#" },
-  { name: "Internship program", href: "#" },
-  { name: "Our values", href: "#" },
-  { name: "Meet our leadership", href: "#" },
-];
 const stats = [
   { name: "Two years of experience", value: "2+" },
   { name: "You can contact me 7 days a week", value: "7" },
@@ -25,7 +18,7 @@ function MainSection({
       } py-24 sm:py-32`}
     >
       <img
-        src="../../src/assets/fondo.png"
+        src="./assets/fondo.png"
         alt=""
         style={{
           filter: `${isDarkTheme ? "brightness(30%)" : "brightness(100%)"}`,

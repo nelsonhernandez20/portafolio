@@ -22,7 +22,7 @@ function AboutMe({ isDarkTheme }) {
       <div className="md:mx-3 mx-1 md:w-2/5 w-full">
         <img
           className="md:w-full w-40 block mx-auto"
-          src="../src/assets/avatar.jpg"
+          src="./assets/avatar.jpg"
         />
       </div>
       <div className="mx-3 md:w-3/5 w-full">

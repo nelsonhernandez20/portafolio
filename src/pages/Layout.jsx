@@ -57,14 +57,14 @@ function Layout() {
                   <Link to={"/"}>
                     <img
                       className="block h-8 w-auto lg:hidden"
-                      src="../../public/assets/letter-n.png"
+                      src="./assets/letter-n.png"
                       alt="Your Company"
                     />
                   </Link>
                   <Link to={"/"}>
                     <img
                       className="hidden h-12 w-12 w-auto lg:block"
-                      src="../../public/assets/letter-n.png"
+                      src="./assets/letter-n.png"
                       alt="Your Company"
                     />
                   </Link>
