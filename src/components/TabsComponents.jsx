@@ -63,22 +63,22 @@ export default function TabsComponents({ isDarkTheme }) {
   const videosTodoApp = [{ url: "https://www.youtube.com/embed/LkyBwVMdIZY" }];
 
   const iqImages = [
-    { url: "../../src/assets/iq/login.jpeg" },
-    { url: "../../src/assets/iq/home.jpeg" },
-    { url: "../../src/assets/iq/menu.jpeg" },
-    { url: "../../src/assets/iq/codPhone.jpeg" },
-    { url: "../../src/assets/iq/oportunidad.jpeg" },
-    { url: "../../src/assets/iq/programas.jpeg" },
-    { url: "../../src/assets/iq/tickets.jpeg" },
-    { url: "../../src/assets/iq/asignaciones.jpeg" },
+    { url: "../../public/assets/iq/login.jpeg" },
+    { url: "../../public/assets/iq/home.jpeg" },
+    { url: "../../public/assets/iq/menu.jpeg" },
+    { url: "../../public/assets/iq/codPhone.jpeg" },
+    { url: "../../public/assets/iq/oportunidad.jpeg" },
+    { url: "../../public/assets/iq/programas.jpeg" },
+    { url: "../../public/assets/iq/tickets.jpeg" },
+    { url: "../../public/assets/iq/asignaciones.jpeg" },
   ];
 
   const dtisImages = [
-    { url: "../../src/assets/dtis/login.jpeg" },
-    { url: "../../src/assets/dtis/menu.jpeg" },
-    { url: "../../src/assets/dtis/products.jpeg" },
-    { url: "../../src/assets/dtis/registroUsuario.jpeg" },
-    { url: "../../src/assets/dtis/reports.jpeg" },
+    { url: "../../public/assets/dtis/login.jpeg" },
+    { url: "../../public/assets/dtis/menu.jpeg" },
+    { url: "../../public/assets/dtis/products.jpeg" },
+    { url: "../../public/assets/dtis/registroUsuario.jpeg" },
+    { url: "../../public/assets/dtis/reports.jpeg" },
   ];
 
   return (

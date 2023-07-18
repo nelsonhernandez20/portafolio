@@ -7,19 +7,19 @@ function Contact() {
   const dataContact = [
     {
       title: "Email",
-      image: "../../src/assets/gmail.png",
+      image: "../../public/assets/gmail.png",
       link: "#",
       content: "nelsonvozjr@gmail.com",
     },
     {
       title: "Whatsapp",
-      image: "../../src/assets/whatsapp.png",
+      image: "../../public/assets/whatsapp.png",
       link: "https://wa.me/+584247607637",
       content: "+584247607637",
     },
     {
       title: "Linkedin",
-      image: "../../src/assets/linkedin.png",
+      image: "../../public/assets/linkedin.png",
       link: "https://www.linkedin.com/in/nelson-hernandez-dev/",
       content: "https://www.linkedin.com/in/nelson-hernandez-dev/",
     },

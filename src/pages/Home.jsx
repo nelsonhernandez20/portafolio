@@ -12,12 +12,12 @@ import CardProject from "../components/CardProject";
 const description =
   "I am a full stack programmer focused on both the development of web pages and mobile apps";
 const skills = [
-  { title: "React", image: "../src/assets/react-image.png" },
-  { title: "React Native", image: "../src/assets/react-native-image.png" },
-  { title: "Nextjs", image: "../src/assets/nextjs.png" },
-  { title: "Nodejs", image: "../src/assets/nodejs.png" },
-  { title: "Tailwind", image: "../src/assets/tailwind-logo.png" },
-  { title: "PostgreSQL", image: "../src/assets/postgre-sql.png" },
+  { title: "React", image: "../public/assets/react-image.png" },
+  { title: "React Native", image: "../public/assets/react-native-image.png" },
+  { title: "Nextjs", image: "../public/assets/nextjs.png" },
+  { title: "Nodejs", image: "../public/assets/nodejs.png" },
+  { title: "Tailwind", image: "../public/assets/tailwind-logo.png" },
+  { title: "PostgreSQL", image: "../public/assets/postgre-sql.png" },
 ];
 
 const projectsMovil = [
@@ -42,30 +42,30 @@ const projectsMovil = [
       "task app with data persistence achieved with localstorage the app has the functionalities of a basic crud, this web app was made with nextjs and has its mobile version with sqlite to store data on the mobile",
   },
   {
-    url: "./../src/assets/iq/home.jpeg",
+    url: "./../public/assets/iq/home.jpeg",
     tpo: "image",
     title: "IQ system",
     description:
       "University system made with react native and nodejs, this app has all the functionalities of a crud, in addition to chats with socket io, useContext for Darkmode, it has upload of images, upload of student notes, update of student notes, authentication token, sending email with pdf to students, push notifications with firebase, among other functionalities styles made with tailwind",
     carrousel: [
-      { url: "../../src/assets/iq/menu.jpeg" },
-      { url: "../../src/assets/iq/codPhone.jpeg" },
-      { url: "../../src/assets/iq/oportunidad.jpeg" },
-      { url: "../../src/assets/iq/programas.jpeg" },
-      { url: "../../src/assets/iq/tickets.jpeg" },
-      { url: "../../src/assets/iq/asignaciones.jpeg" },
+      { url: "../../public/assets/iq/menu.jpeg" },
+      { url: "../../public/assets/iq/codPhone.jpeg" },
+      { url: "../../public/assets/iq/oportunidad.jpeg" },
+      { url: "../../public/assets/iq/programas.jpeg" },
+      { url: "../../public/assets/iq/tickets.jpeg" },
+      { url: "../../public/assets/iq/asignaciones.jpeg" },
     ],
   },
   {
-    url: "../../src/assets/dtis/login.jpeg",
+    url: "../../public/assets/dtis/login.jpeg",
     tpo: "image",
     title: "Dtis Company",
     description:
       "inventory system made with react native and nodejs, system with user registration, inventory registration search by barcode, report generator with pdf, drop-down menu, useContext for Darkmode and styles made with tailwind",
     carrousel: [
-      { url: "../../src/assets/dtis/menu.jpeg" },
-      { url: "../../src/assets/dtis/products.jpeg" },
-      { url: "../../src/assets/dtis/registroUsuario.jpeg" },
+      { url: "../../public/assets/dtis/menu.jpeg" },
+      { url: "../../public/assets/dtis/products.jpeg" },
+      { url: "../../public/assets/dtis/registroUsuario.jpeg" },
     ],
   },
 ];
