@@ -11,12 +11,12 @@ import CardProject from "../components/CardProject";
 const description =
   "I am a full stack programmer focused on both the development of web pages and mobile apps";
 const skills = [
-  { title: "React", image: "../public/assets/react-image.png" },
-  { title: "React Native", image: "../public/assets/react-native-image.png" },
-  { title: "Nextjs", image: "../public/assets/nextjs.png" },
-  { title: "Nodejs", image: "../public/assets/nodejs.png" },
-  { title: "Tailwind", image: "../public/assets/tailwind-logo.png" },
-  { title: "PostgreSQL", image: "../public/assets/postgre-sql.png" },
+  { title: "React", image: "./assets/react-image.png" },
+  { title: "React Native", image: "./assets/react-native-image.png" },
+  { title: "Nextjs", image: "./assets/nextjs.png" },
+  { title: "Nodejs", image: "./assets/nodejs.png" },
+  { title: "Tailwind", image: "./assets/tailwind-logo.png" },
+  { title: "PostgreSQL", image: "./assets/postgre-sql.png" },
 ];
 
 const projectsMovil = [
@@ -41,7 +41,7 @@ const projectsMovil = [
       "task app with data persistence achieved with localstorage the app has the functionalities of a basic crud, this web app was made with nextjs and has its mobile version with sqlite to store data on the mobile",
   },
   {
-    url: "./../public/assets/iq/home.jpeg",
+    url: "./assets/iq/home.jpeg",
     tpo: "image",
     title: "IQ system",
     description:
@@ -56,7 +56,7 @@ const projectsMovil = [
     ],
   },
   {
-    url: "../../public/assets/dtis/login.jpeg",
+    url: "./assets/dtis/login.jpeg",
     tpo: "image",
     title: "Dtis Company",
     description:
