@@ -35,24 +35,24 @@ function Layout() {
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
-                <Disclosure.Button
-                  className={`inline-flex items-center justify-center rounded-md p-2 ${
-                    isDarkTheme
-                      ? "text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-white"
-                      : "text-gray-800 hover:bg-slate-500 hover:text-slate-700 focus:ring-slate-100"
-                  }  focus:outline-none focus:ring-2 focus:ring-inset `}
-                >
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                  )}
-                </Disclosure.Button>
-              </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
+              <div className="flex flex-1 items-center justify-between sm:items-stretch sm:justify-between">
+                <div className="flex items-center sm:hidden">
+                  {/* Mobile menu button*/}
+                  <Disclosure.Button
+                    className={`inline-flex items-center justify-center rounded-md p-2 ${
+                      isDarkTheme
+                        ? "text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-white"
+                        : "text-gray-800 hover:bg-slate-500 hover:text-slate-700 focus:ring-slate-100"
+                    }  focus:outline-none focus:ring-2 focus:ring-inset `}
+                  >
+                    <span className="sr-only">Open main menu</span>
+                    {open ? (
+                      <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                    ) : (
+                      <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                    )}
+                  </Disclosure.Button>
+                </div>
                 <div className="flex flex-shrink-0 items-center">
                   <Link to={"/"}>
                     <img
@@ -69,7 +69,11 @@ function Layout() {
                     />
                   </Link>
                 </div>
-
+                <div className="flex flex-shrink-0 items-center md:invisible visible m-0 p-0 w-[10%]">
+                  <Button className="block h-8 w-auto p-0 m-0" onClick={() => setIsDarkTheme(!isDarkTheme)}>
+                    {isDarkTheme ? <DarkModeIcon /> : <Brightness5Icon />}
+                  </Button>
+                </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item, index) => (
@@ -98,7 +102,7 @@ function Layout() {
                   </div>
                 </div>
               </div>
-              <div>
+              <div className="invisible md:visible w-0 md:w-auto">
                 <Button onClick={() => setIsDarkTheme(!isDarkTheme)}>
                   {isDarkTheme ? <DarkModeIcon /> : <Brightness5Icon />}
                 </Button>

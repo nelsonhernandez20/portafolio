@@ -1,23 +1,42 @@
 /* eslint-disable react/prop-types */
-import * as React from "react";
+import { useContext, useEffect, useState } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
 import Projects from "./Projects";
 
 import ContextTheme from "../context/ContextTheme";
 
 export default function CardProject({ data }) {
-  const { isDarkTheme } = React.useContext(ContextTheme);
+  const { isDarkTheme } = useContext(ContextTheme);
+  const [mxWidth, setmxWidth] = useState(345);
+  const sizeWindow = () => {
+    if (screen.width < 1024) {
+      console.log("entro");
+      setmxWidth("99%");
+    } else {
+      setmxWidth(345);
+    }
+  };
+
+  useEffect(() => {
+    sizeWindow();
+  }, []);
+
   return (
     <Card
-      className={`${isDarkTheme ? "bg-gray-900" : "bg-slate-200"} my-6`}
-      sx={{ maxWidth: 345 }}
+      className={` my-6 mx-2 rounded-lg`}
+      sx={{ maxWidth: mxWidth }}
+      style={{
+        backgroundColor: isDarkTheme ? "rgb(17 24 39)" : "rgb(226 232 240)",
+      }}
     >
       {data.tpo == "image" ? (
-        <div className={`isDarkTheme ? "bg-gray-900" : "bg-slate-200" justify-center flex`}>
+        <div
+          className={`${
+            isDarkTheme ? "bg-gray-900" : "bg-slate-200"
+          } justify-center flex p-2 rounded-lg`}
+        >
           <Projects tpo="image" content={data.carrousel} />
           <CardContent className={isDarkTheme ? "bg-gray-900" : "bg-slate-100"}>
             <Typography
@@ -40,8 +59,10 @@ export default function CardProject({ data }) {
           </CardContent>
         </div>
       ) : (
-        <CardActionArea
-          className={isDarkTheme ? "bg-gray-900" : "bg-slate-200"}
+        <div
+          className={`${
+            isDarkTheme ? "bg-gray-900" : "bg-slate-200"
+          } p-2 rounded-lg`}
         >
           <iframe
             width="100%"
@@ -70,7 +91,7 @@ export default function CardProject({ data }) {
               </p>
             </Typography>
           </CardContent>
-        </CardActionArea>
+        </div>
       )}
     </Card>
   );

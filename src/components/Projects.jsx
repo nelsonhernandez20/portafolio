@@ -10,7 +10,7 @@ function Projects({ tpo, content }) {
     <div
       className={`${
         isDarkTheme ? "bg-gray-900" : "bg-slate-50"
-      } flex justify-center shadow`}
+      } flex justify-center shadow p-2 rounded-lg items-center content-center`}
     >
       <div
         className={`mt-0 w-full ${tpo == "video" ? "md:w-full" : "md:w-1/2"}  my-4`}

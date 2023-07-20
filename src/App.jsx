@@ -11,7 +11,7 @@ function App() {
   return (
     <ContextTheme.Provider value={{ isDarkTheme, setIsDarkTheme }}>
       <body
-        className={`${isDarkTheme ? "bg-gray-950" : "bg-slate-100"} p-0 m-0`}
+        className={`${isDarkTheme ? "bg-gray-950" : "bg-slate-100"} p-0 m-0 w-full overflow-x-hidden`}
       >
         <div className="sticky top-0 z-10">
           <Layout />

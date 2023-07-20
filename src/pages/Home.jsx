@@ -109,7 +109,7 @@ function Home() {
               isDarkTheme ? "text-white" : "text-black"
             } text-center text-4xl`}
           >
-            Proyectos
+            Projects
           </h4>
           <div className="md:visible md:w-full md:h-full w-0 h-0 invisible">
             <TabsComponents isDarkTheme={isDarkTheme} />
